@@ -1,0 +1,26 @@
+local ViP_T = "http://fi.nobelium.xyz/Asset?id=1906" --If user wears this tshirt, then they get the bonus.
+
+game.Players.ChildAdded:connect(function(Player)
+	if Player:IsA("Player") then
+		print "found player"
+
+		repeat wait() until Player.Character == nil
+		print "found character"
+
+		wait(1)
+		print "stage 1"
+		
+		wait(1)
+		if game.Workspace[Player.Name].Torso.roblox.Texture == ViP_T then
+			print "stage 2 (found)"
+
+			Player.leaderstats.Gems.Value = Player.leaderstats.Gems.Value + 20
+			Player.leaderstats.Cash.Value = Player.leaderstats.Cash.Value + 10000
+			
+			local msg = Instance.new("Message", workspace)
+			msg.Text = (Player.Name.." has joined the game with VIP access!")
+			wait(3)
+			msg:remove()
+		end
+	end
+end)
