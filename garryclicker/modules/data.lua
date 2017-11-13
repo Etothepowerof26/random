@@ -1,4 +1,4 @@
-local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+GarryClicker.CharacterSet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 
 GarryClicker.EncodeData = function(data)
     return ((data:gsub('.', function(x)
@@ -9,14 +9,14 @@ GarryClicker.EncodeData = function(data)
         if (#x < 6) then return '' end
         local c=0
         for i=1,6 do c=c+(x:sub(i,i)=='1' and 2^(6-i) or 0) end
-        return b:sub(c+1,c+1)
+        return GarryClicker.CharacterSet:sub(c+1,c+1)
     end)..({ '', '==', '=' })[#data%3+1])
 end
 GarryClicker.DecodeData = function(data)
-    data = string.gsub(data, '[^'..b..'=]', '')
+    data = string.gsub(data, '[^'..GarryClicker.CharacterSet..'=]', '')
     return (data:gsub('.', function(x)
         if (x == '=') then return '' end
-        local r,f='',(b:find(x)-1)
+        local r,f='',(GarryClicker.CharacterSet:find(x)-1)
         for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end
         return r;
     end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x)
