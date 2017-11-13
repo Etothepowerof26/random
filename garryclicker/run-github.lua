@@ -27,8 +27,7 @@ http.Fetch("https://raw.githubusercontent.com/Etothepowerof26/random/master/garr
     RunString(content, "mainmodule", false)
     a("Main module is done loading!")
 end)
-
-GarryClicker.Notify("Running GarryClicker...")
 http.Fetch("https://raw.githubusercontent.com/Etothepowerof26/random/master/garryclicker/modules/init.lua", function(content)
+	GarryClicker.Notify("Running GarryClicker...")
     RunString(content, "initmodule", false)
 end)
