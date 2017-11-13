@@ -1,4 +1,4 @@
-GarryClicker = GarryClicker or {}
+GarryClicker = GarryClicker or {} 
 GarryClicker.Notify = function(Text)
 	return chat.AddText(Color(0, 255, 255), "[GARRYCLICKER] ", GarryClicker.DefaultColor or Color(0, 127, 255), Text)
 end
