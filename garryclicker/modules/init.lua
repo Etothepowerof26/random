@@ -1,8 +1,3 @@
-GarryClicker = GarryClicker or {}
-GarryClicker.Notify = function(Text)
-	return chat.AddText(Color(0, 255, 255), "[GARRYCLICKER] ", GarryClicker.DefaultColor or Color(0, 127, 255), Text)
-end
-
 do
 	for i = 1, 96 do
 		local Chance = math.random(1, 7)
