@@ -1,0 +1,307 @@
+[1] = {
+	["children"] = {
+		[1] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Position"] = Vector(0.00075149536132813, -0.079177856445313, 4.1116943359375),
+								["ClassName"] = "model",
+								["UniqueID"] = "2431201560",
+								["Size"] = 0.025,
+								["Color"] = Vector(159, 159, 159),
+								["Material"] = "models/shiny",
+								["Model"] = "models/hunter/misc/cone4x2mirrored.mdl",
+								["Scale"] = Vector(0.5, 0.89999997615814, 1),
+							},
+						},
+						[2] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Angles"] = Angle(0, 90, 0),
+										["ClassName"] = "clip",
+										["UniqueID"] = "3567176081",
+										["Position"] = Vector(0, -0.99655151367188, 0.00042724609375),
+									},
+								},
+								[2] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Angles"] = Angle(-90, 0, 0),
+										["ClassName"] = "clip",
+										["UniqueID"] = "2783359370",
+										["Position"] = Vector(0.0004119873046875, 0.00042724609375, 15.863891601563),
+									},
+								},
+							},
+							["self"] = {
+								["Position"] = Vector(0.0005645751953125, -0.091659545898438, 21.282104492188),
+								["UniqueID"] = "3003046289",
+								["Scale"] = Vector(1.2000000476837, 1.6000000238419, 1),
+								["Size"] = 0.825,
+								["Angles"] = Angle(0, 0, -180),
+								["DoubleFace"] = true,
+								["EditorExpand"] = true,
+								["Color"] = Vector(195, 195, 195),
+								["Material"] = "models/shiny",
+								["Model"] = "models/weapons/c_models/c_pickaxe/c_pickaxe.mdl",
+								["ClassName"] = "model",
+							},
+						},
+						[3] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Position"] = Vector(0.00201416015625, 0.0020751953125, 32.404083251953),
+								["ClassName"] = "model",
+								["UniqueID"] = "3065697263",
+								["Size"] = 0.025,
+								["Color"] = Vector(118, 118, 118),
+								["Material"] = "models/shiny",
+								["Model"] = "models/hunter/misc/cone4x2mirrored.mdl",
+								["Scale"] = Vector(0.40000000596046, 0.60000002384186, 1),
+							},
+						},
+						[4] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Angles"] = Angle(0, 90, 0),
+										["ClassName"] = "clip",
+										["UniqueID"] = "823307452",
+										["Position"] = Vector(0, -0.99655151367188, 0.00042724609375),
+									},
+								},
+								[2] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Angles"] = Angle(-90, 0, 0),
+										["ClassName"] = "clip",
+										["UniqueID"] = "2739664289",
+										["Position"] = Vector(0.0004119873046875, 0.00042724609375, 15.863891601563),
+									},
+								},
+							},
+							["self"] = {
+								["Position"] = Vector(-0.13087463378906, -0.125244140625, 21.284240722656),
+								["UniqueID"] = "894009747",
+								["Scale"] = Vector(1.2000000476837, 1.6000000238419, 1),
+								["Size"] = 0.825,
+								["Angles"] = Angle(0, 180, 180),
+								["DoubleFace"] = true,
+								["EditorExpand"] = true,
+								["Color"] = Vector(195, 195, 195),
+								["Material"] = "models/shiny",
+								["Model"] = "models/weapons/c_models/c_pickaxe/c_pickaxe.mdl",
+								["ClassName"] = "model",
+							},
+						},
+						[5] = {
+							["children"] = {
+							},
+							["self"] = {
+								["Material"] = "models/weapons/v_crowbar/crowbar_cyl",
+								["Position"] = Vector(-0.00115966796875, -0.000701904296875, 23.735412597656),
+								["ClassName"] = "model",
+								["Size"] = 0.725,
+								["UniqueID"] = "4056667952",
+								["Model"] = "models/props_c17/signpole001.mdl",
+								["Scale"] = Vector(1, 1.6000000238419, 0.10000000149012),
+							},
+						},
+					},
+					["self"] = {
+						["UniqueID"] = "1904888854",
+						["Scale"] = Vector(0.69999998807907, 1.1000000238419, 0.30000001192093),
+						["Position"] = Vector(3.6024322509766, -1.4368057250977, -26.606689453125),
+						["Material"] = "models/shiny",
+						["EditorExpand"] = true,
+						["Angles"] = Angle(0, 90, 0),
+						["Color"] = Vector(118, 118, 118),
+						["Bone"] = "right hand",
+						["Model"] = "models/props_c17/signpole001.mdl",
+						["ClassName"] = "model",
+					},
+				},
+			},
+			["self"] = {
+				["Arguments"] = "weapon_pick@@1",
+				["Invert"] = true,
+				["Event"] = "weapon_class",
+				["UniqueID"] = "1909478486",
+				["EditorExpand"] = true,
+				["ClassName"] = "event",
+			},
+		},
+		[2] = {
+			["children"] = {
+				[1] = {
+					["children"] = {
+						[1] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Max"] = 20,
+										["ClassName"] = "proxy",
+										["UniqueID"] = "971362603",
+										["InputMultiplier"] = 3.5,
+										["Min"] = 9,
+										["Name"] = "size",
+										["VariableName"] = "Size",
+									},
+								},
+								[2] = {
+									["children"] = {
+									},
+									["self"] = {
+										["ClassName"] = "event",
+										["UniqueID"] = "340834781",
+										["Event"] = "button",
+										["Arguments"] = "f",
+										["Invert"] = true,
+									},
+								},
+							},
+							["self"] = {
+								["EditorExpand"] = true,
+								["UniqueID"] = "1264547630",
+								["SpritePath"] = "sprites/physg_glow1",
+								["Size"] = 16.869561548462,
+								["Position"] = Vector(-6.4082946777344, 0.48431396484375, 2.7180252075195),
+								["SizeX"] = 1.1000000238419,
+								["ClassName"] = "sprite",
+							},
+						},
+						[2] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["ClassName"] = "event",
+										["UniqueID"] = "1084783519",
+										["Event"] = "button",
+										["Arguments"] = "f",
+										["Invert"] = true,
+									},
+								},
+							},
+							["self"] = {
+								["Velocity"] = 10,
+								["Collide"] = false,
+								["UniqueID"] = "3944122832",
+								["DieTime"] = 5,
+								["Position"] = Vector(-0.082763671875, -0.3765869140625, 0.84187316894531),
+								["PositionSpread"] = 6.7,
+								["FireDelay"] = 0.5,
+								["NumberParticles"] = 3,
+								["EndSize"] = 2,
+								["ClassName"] = "particles",
+								["Lighting"] = false,
+								["Material"] = "sprites/glow04_noz",
+								["EditorExpand"] = true,
+								["Angles"] = Angle(-7.0858693122864, -179.99995422363, 179.99993896484),
+								["StartSize"] = 0.5,
+								["Gravity"] = Vector(0, 0, 0),
+							},
+						},
+						[3] = {
+							["children"] = {
+								[1] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Angles"] = Angle(89.9375, -0.0625, -0.0625),
+										["UniqueID"] = "1715506588",
+										["EditorExpand"] = true,
+										["Position"] = Vector(0.29351806640625, -0.00494384765625, 38.775543212891),
+										["ClassName"] = "clip",
+									},
+								},
+								[2] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Size"] = 20.125,
+										["ClassName"] = "light",
+										["UniqueID"] = "2952316374",
+										["Position"] = Vector(0.00042724609375, 0.000762939453125, 3.2705078125),
+									},
+								},
+								[3] = {
+									["children"] = {
+									},
+									["self"] = {
+										["Size"] = 20.125,
+										["ClassName"] = "light",
+										["UniqueID"] = "365503329",
+										["Position"] = Vector(-0.274658203125, 0.00018310546875, 30.003173828125),
+									},
+								},
+								[4] = {
+									["children"] = {
+									},
+									["self"] = {
+										["ClassName"] = "event",
+										["UniqueID"] = "441715472",
+										["Event"] = "button",
+										["Arguments"] = "f",
+										["Invert"] = true,
+									},
+								},
+							},
+							["self"] = {
+								["UniqueID"] = "2054164759",
+								["Model"] = "models/hunter/misc/cone1x1.mdl",
+								["EditorExpand"] = true,
+								["Name"] = "conex",
+								["Scale"] = Vector(1, 1, 5.5),
+								["Alpha"] = 0.175,
+								["Angles"] = Angle(86.929565429688, 179.99075317383, 179.99014282227),
+								["Size"] = 0.225,
+								["Position"] = Vector(-41.201324462891, -0.0048828125, 3.8653717041016),
+								["ClassName"] = "model",
+								["Brightness"] = 4.4,
+								["Translucent"] = true,
+								["Material"] = "models/ihvtest/eyeball_l",
+							},
+						},
+					},
+					["self"] = {
+						["Angles"] = Angle(0.57543087005615, 95.39183807373, 88.592994689941),
+						["Position"] = Vector(3.8964385986328, -0.6301383972168, 0.32769775390625),
+						["ClassName"] = "model",
+						["Size"] = 0.65,
+						["Model"] = "models/props_2fort/hardhat001.mdl",
+						["UniqueID"] = "3995582175",
+					},
+				},
+			},
+			["self"] = {
+				["Name"] = "hat",
+				["ClassName"] = "group",
+				["UniqueID"] = "2356934159",
+				["EditorExpand"] = true,
+			},
+		},
+	},
+	["self"] = {
+		["EditorExpand"] = true,
+		["UniqueID"] = "1007590388",
+		["ClassName"] = "group",
+		["Name"] = "my outfit",
+		["Description"] = "add parts to me!",
+	},
+},
