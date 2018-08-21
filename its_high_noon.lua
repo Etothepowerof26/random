@@ -31,14 +31,14 @@ high_noon.BoneToLook = "ValveBiped.Bip01_Head1"
 
 function high_noon:SecondaryAttack()
 	if SERVER then
-		local PlayersToShoot = {}
-		for i,v in pairs(player.GetAll()) do
-			if (self:GetOwner():VisibleVec(v:GetPos())) and not (v == self:GetOwner())  then
-				table.insert(PlayersToShoot, v)
-			end
-		end
-		
 		timer.Simple(2.75, function()
+			local PlayersToShoot = {} --do this calculation when about to shoot because you can look away and still kill the people
+			for i,v in pairs(player.GetAll()) do
+				if (self:GetOwner():VisibleVec(v:GetPos())) and not (v == self:GetOwner())  then
+					table.insert(PlayersToShoot, v)
+				end
+			end
+				
 			for k,v in pairs(PlayersToShoot) do
 				if v:IsValid() then
 					local targetBonePos, _
