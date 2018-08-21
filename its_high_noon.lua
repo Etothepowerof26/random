@@ -1,7 +1,7 @@
 local high_noon = {}
 
 high_noon.Base = "weapon_base"
-high_noon.PrintName = "Mccree's Pistol"
+high_noon.PrintName = "McCree's Pistol"
 high_noon.Author = "26 E's"
 high_noon.Instructions = "It's high noon!"
 high_noon.Spawnable = true
