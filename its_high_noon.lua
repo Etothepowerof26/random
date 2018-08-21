@@ -1,7 +1,7 @@
 local high_noon = {}
 
 high_noon.Base = "weapon_base"
-high_noon.PrintName = "McCree's Pistol"
+high_noon.PrintName = "Mccree's Pistol"
 high_noon.Author = "26 E's"
 high_noon.Instructions = "It's high noon!"
 high_noon.Spawnable = true
@@ -40,28 +40,30 @@ function high_noon:SecondaryAttack()
 		
 		timer.Simple(2.75, function()
 			for k,v in pairs(PlayersToShoot) do
-				local targetBonePos, _
-				if v:LookupBone(self.BoneToLook) then
-					targetBonePos, _ = v:GetBonePosition(v:LookupBone(self.BoneToLook))
-				else
-					targetBonePos = v:GetPos()
-				end
-				
-				local shootpos = self:GetOwner():GetShootPos()
-				
-				local bullet = {
-					Num = 1,
-					Src = self:GetOwner():GetShootPos(),
-					Dir = (targetBonePos - shootpos),
-					Spread = Vector(0,0,0),
-					Tracer = 5,
-					Force = 10,
-					Damage = 100,
-					AmmoType = "357"
-				}
-				
-				for i = 1, 3 do
-					self:GetOwner():FireBullets(bullet)
+				if v:IsValid() then
+					local targetBonePos, _
+					if v:LookupBone(self.BoneToLook) then
+						targetBonePos, _ = v:GetBonePosition(v:LookupBone(self.BoneToLook))
+					else
+						targetBonePos = v:GetPos()
+					end
+					
+					local shootpos = self:GetOwner():GetShootPos()
+					
+					local bullet = {
+						Num = 1,
+						Src = self:GetOwner():GetShootPos(),
+						Dir = (targetBonePos - shootpos),
+						Spread = Vector(0,0,0),
+						Tracer = 5,
+						Force = 10,
+						Damage = 100,
+						AmmoType = "357"
+					}
+					
+					for i = 1, 3 do
+						self:GetOwner():FireBullets(bullet)
+					end
 				end
 			end
 			self:ShootEffects()
