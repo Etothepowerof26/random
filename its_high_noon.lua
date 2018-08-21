@@ -10,7 +10,7 @@ high_noon.AdminOnly = true
 
 high_noon.Secondary = {}
 high_noon.Secondary.ClipSize = -1
-high_noon.Secondary.DefaultClip	= -1
+high_noon.Secondary.DefaultClip = -1
 high_noon.Secondary.Automatic = false
 high_noon.Secondary.Ammo = "none"
 
@@ -20,7 +20,7 @@ high_noon.AutoSwitchFrom = false
 high_noon.Slot = 2
 high_noon.SlotPos = 2
 high_noon.DrawAmmo = false
-high_noon.DrawCrosshair	= true
+high_noon.DrawCrosshair = true
 
 high_noon.ViewModel = "models/weapons/v_357.mdl"
 high_noon.WorldModel = "models/weapons/w_357.mdl"
