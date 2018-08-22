@@ -68,7 +68,7 @@ function high_noon:SecondaryAttack()
 			end
 			self:ShootEffects()
 			self:EmitSound(self.ShootSound)
-			self:SetNextSecondaryFire(CurTime()+1)
+			self:SetNextSecondaryFire(CurTime()+3)
 		end)
 	else
 		sound.PlayURL(self.SpeakSound, "", function(snd)
